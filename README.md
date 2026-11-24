@@ -1,81 +1,209 @@
-🔐 Web Application Penetration Testing – Week 4
-Networkwalks Internship | Web Application Security Report
-A learning-focused documentation project based on the Week 4 web application penetration-testing report in the reference repository. It summarizes the assessment scope, tools, methodology, reported observations, risk discussion, and security recommendations.
-Author: Aritra Pal
-Role: Cyber Crime Investigator and Fraud Analyser
-Focus: Cybersecurity | Web Application Security | Ethical Hacking
 
-🎯 Project Overview
-- Project: Web Application Penetration Testing
-- Reference target stated in the source report: https://medirozahospital.com/
-- Program: Networkwalks Internship
-- Assessment type: Web Application VAPT
-- Report file: Report.pdf
-This README is a project summary for learning and documentation. Use the report and evidence supplied with the project to verify details before presenting them as your own findings.
-🛠️ Tools Mentioned in the Reference Project
-Tool	Purpose
-Nmap	Network scanning and port/service enumeration
-Burp Suite / Browser	Reviewing web application requests and responses
-Gobuster	Directory and endpoint enumeration
-PDF2John	Password-hash auditing workflow for permitted PDF files
-John the Ripper	Password-strength auditing of hashes you are authorized to test
-Kali Linux	Security testing environment
+# 🔐 Web Application Penetration Testing – Week 4
 
+## Networkwalks Internship | Web Application Security Report
 
-🧰 Command Reference
-The original repository's README identifies the tools and their purposes, but does not publish full terminal command lines. These are safe help/reference commands to check tool syntax before working in an authorized lab:
-nmap --help
-gobuster dir --help
-john --help
-For the GUI tools, open Burp Suite or your browser and use the project only within the written scope and with test accounts. Do not run tests against a real website unless you have explicit permission.
-🔍 Assessment Workflow
-1. Scope and authorization – Confirm written permission, approved hosts, and testing boundaries.
-2. Network reconnaissance – Review permitted network exposure using approved tools.
-3. Application mapping – Identify application pages, roles, login flows, and inputs.
-4. Security review – Assess authentication, input handling, and information exposure safely.
-5. Evidence documentation – Record observations and screenshots while protecting personal data.
-6. Risk assessment – Explain likelihood, impact, and severity based on verified evidence.
-7. Remediation – Recommend practical fixes and defensive controls.
-8. Retesting – Verify fixes only after authorization.
-📌 Findings Summary
-The reference README reports these categories:
-1. SQL Injection / Authentication Concern
-The source report describes a potential SQL-injection-related authentication issue.
+A practical cybersecurity learning project focused on Web Application Vulnerability Assessment and Penetration Testing (VAPT). This project documents the assessment workflow, tools, security observations, and remediation recommendations.
 
-Security impact discussed: possible authentication bypass and unauthorized access.
-2. Sensitive Information Disclosure
-The source report describes sensitive information exposed through a legacy website/database area.
+---
 
-Security impact discussed: potential confidentiality and privacy risks.
-These are summaries of the reference report, not independent findings verified by this repository's author. Review the supplied report and evidence, and do not claim to have personally reproduced an issue unless you did so with authorization.
+## 👨‍💻 Author
 
-🛡️ Recommended Remediation
-- Use parameterized queries and prepared statements.
-- Validate input on the server side.
-- Apply least-privilege database permissions.
-- Enforce strong authentication and authorization.
-- Remove or restrict exposed legacy resources.
-- Keep frameworks, libraries, and database components updated.
-- Review logs for unexpected access.
-- Avoid storing or publishing sensitive personal information.
-- Conduct an authorized retest after fixes.
-📚 Learning Outcomes
-- Understanding a structured web application security assessment
-- Familiarity with common security-testing tools
-- Reviewing authentication and input-handling risks
-- Recognizing sensitive information exposure
-- Writing clear findings and remediation recommendations
-- Maintaining scope, authorization, and evidence integrity
-📁 Project Structure
-NW-WK4-Penetration-Testing-Report/
-├── README.md
-└── Report.pdf
-Keep Report.pdf in the repository if you have permission to share it. Add screenshots only when they are yours or authorized for publication, and redact credentials, personal data, and sensitive host details.
-⚠️ Disclaimer
-This repository is for educational and defensive cybersecurity documentation. Test only systems you own or have explicit written authorization to assess. Do not access, alter, or disclose data without permission. The source report's authorization statement should not be treated as permission for anyone else to test the referenced website.
-👨‍💻 Author
-Arti Pal
-Cyber Crime Investigator and Fraud Analyser
+**Aritra Pal**  
+Cyber Crime Investigator and Fraud Analyser  
 Cybersecurity Student | Ethical Hacking | Web Application Security
 
-Learning by identifying security risks responsibly, documenting evidence, and recommending improvements.
+---
+
+## 🎯 Project Overview
+
+- **Project Name:** Web Application Penetration Testing
+- **Internship:** Networkwalks
+- **Project Week:** Week 4
+- **Assessment Type:** Web Application VAPT
+- **Reference Website:** https://medirozahospital.com/
+- **Operating System:** Kali Linux
+
+---
+
+## 🛠️ Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| Nmap | Network scanning and service identification |
+| Burp Suite | Web application request and response analysis |
+| Gobuster | Directory and endpoint discovery |
+| PDF2John | PDF password-hash extraction for authorized auditing |
+| John the Ripper | Password-strength auditing |
+| Kali Linux | Security testing environment |
+
+---
+
+## 📦 Installation and Setup
+
+Update Kali Linux packages:
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+Install Nmap:
+
+```bash
+sudo apt install nmap
+```
+
+Install Gobuster:
+
+```bash
+sudo apt install gobuster
+```
+
+Install John the Ripper:
+
+```bash
+sudo apt install john
+```
+
+Check installed tools:
+
+```bash
+nmap --version
+gobuster --version
+john --version
+```
+
+---
+
+## 🔍 Project Workflow
+
+### Step 1: Scope and Authorization
+
+Confirm written permission, approved targets, and testing boundaries before performing any security assessment.
+
+### Step 2: Reconnaissance
+
+Collect permitted information about the target and identify the approved assessment scope.
+
+### Step 3: Network Scanning
+
+Use Nmap in an authorized lab or on systems you are permitted to assess.
+
+Command reference:
+
+```bash
+nmap --help
+```
+
+### Step 4: Web Application Analysis
+
+Use Burp Suite to review HTTP requests and responses in a controlled testing environment.
+
+### Step 5: Directory Enumeration
+
+Check Gobuster syntax and options:
+
+```bash
+gobuster dir --help
+```
+
+### Step 6: Password Security Review
+
+Use PDF2John and John the Ripper only for files and password hashes you own or have permission to audit.
+
+```bash
+john --help
+```
+
+### Step 7: Documentation
+
+Record the assessment process, observations, screenshots, and security recommendations in the project report.
+
+---
+
+## 📌 Findings Summary
+
+The reference report discusses the following security concerns:
+
+### 1. SQL Injection / Authentication Concern
+
+The source report describes a potential SQL-injection-related authentication issue.
+
+**Potential Impact:**
+- Authentication bypass
+- Unauthorized access
+- Data confidentiality risks
+
+### 2. Sensitive Information Disclosure
+
+The source report describes sensitive information exposure through a legacy website or database area.
+
+**Potential Impact:**
+- Privacy risks
+- Information leakage
+- Possible misuse of exposed data
+
+Note: These findings are summarized from the reference report and have not been independently verified by this repository's author.
+
+---
+
+## 🛡️ Security Recommendations
+
+- Use parameterized queries and prepared statements.
+- Validate user input on the server side.
+- Apply least-privilege database permissions.
+- Implement strong authentication and authorization.
+- Remove or restrict exposed legacy resources.
+- Keep software and frameworks updated.
+- Monitor application logs for suspicious activity.
+- Protect sensitive information.
+- Perform authorized retesting after remediation.
+
+---
+
+## 📚 Learning Outcomes
+
+- Understanding web application security assessment
+- Learning common VAPT tools
+- Understanding authentication and input-validation risks
+- Identifying sensitive information exposure
+- Preparing professional security reports
+- Practicing responsible and authorized security testing
+
+---
+
+## 📁 Project Structure
+
+```text
+NW-WK4-Penetration-Testing-Report/
+│
+├── README.md
+├── Report.pdf
+└── Screenshots/
+    ├── assessment-overview.png
+    └── evidence.png
+```
+
+Add screenshots only if they are your own or authorized for publication. Redact credentials, personal data, and sensitive target details.
+
+---
+
+## ⚠️ Disclaimer
+
+This project is intended for educational and defensive cybersecurity purposes only.
+
+Perform security testing only on systems you own or have explicit written authorization to assess. Do not access, modify, or disclose sensitive information without permission.
+
+The reference report does not grant permission to test its target website.
+
+---
+
+## 👨‍💻 Author
+
+**Aritra Pal**  
+Cyber Crime Investigator and Fraud Analyser
+
+Cybersecurity Student | Ethical Hacking | Web Application Security
+
+**Learn • Test Responsibly • Document • Secure**
