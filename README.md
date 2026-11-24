@@ -7,11 +7,6 @@ A practical cybersecurity learning project focused on Web Application Vulnerabil
 
 ---
 
-## 👨‍💻 Author
-
-**Aritra Pal**  
-Cyber Crime Investigator and Fraud Analyser  
-Cybersecurity Student | Ethical Hacking | Web Application Security
 
 ---
 
@@ -201,7 +196,7 @@ The reference report does not grant permission to test its target website.
 
 ## 👨‍💻 Author
 
-**Aritra Pal**  
+** Aritra Pal**  
 Cyber Crime Investigator and Fraud Analyser
 
 Cybersecurity Student | Ethical Hacking | Web Application Security
